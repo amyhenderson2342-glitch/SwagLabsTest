@@ -6,7 +6,7 @@ describe('My Login application', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open()
 
-        await LoginPage.login('standard_user', 'secret_sauce')
+        await LoginPage.login(LoginPage.standUser, LoginPage.universalPass)
         await expect(SecurePage.productTitle).toHaveText(
             expect.stringContaining('Products'))
     })
