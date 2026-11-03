@@ -4,7 +4,7 @@ import Page from './base1.js';
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage extends Page {
+class Login extends Base {
     /**
      * define selectors using getter methods
      */
@@ -22,7 +22,7 @@ class LoginPage extends Page {
 
     standUser="standard_user"
     universalPass="secret_sauce"
-    
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -41,4 +41,4 @@ class LoginPage extends Page {
     }
 }
 
-export default new LoginPage();
+export default new Login();

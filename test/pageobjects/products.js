@@ -4,13 +4,17 @@ import Page from './base1.js';
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class SecurePage extends Page {
+class Products extends Base {
     /**
      * define selectors using getter methods
      */
+    get shoppingCart () {
+        return $('.shopping_cart_badge');
+    }
+
     get productTitle () {
         return $('.title');
     }
 }
 
-export default new SecurePage();
+export default new Products();
