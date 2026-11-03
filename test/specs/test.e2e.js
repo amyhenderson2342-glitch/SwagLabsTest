@@ -4,9 +4,9 @@ import Products from '../pageobjects/products.js'
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
-        for (let i = 0; i < Login.users.length; i++) {
+        for (let i = 0; i < Login.credentials.users.length; i++) {
             await Login.open()
-            await Login.login(Login.users[i], Login.universalPass)
+            await Login.login(Login.credentials.users[i], Login.credentials.universalPass)
             await expect(Products.productTitle).toHaveText(
                 expect.stringContaining('Products'))
         }

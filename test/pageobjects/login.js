@@ -20,8 +20,10 @@ class Login extends Base1 {
         return $('#login-button');
     }
 
-    users=["standard_user", "problem_user", "error_user", "visual_user"]
-    universalPass="secret_sauce"
+    credentials = {
+        users: ["standard_user", "problem_user", "error_user", "visual_user"],
+        universalPass: "secret_sauce"
+    }
 
     /**
      * a method to encapsule automation code to interact with the page
