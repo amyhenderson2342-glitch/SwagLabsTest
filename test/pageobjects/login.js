@@ -20,7 +20,7 @@ class Login extends Base1 {
         return $('#login-button');
     }
 
-    standUser="standard_user"
+    users=["standard_user", "problem_user", "error_user", "visual_user"]
     universalPass="secret_sauce"
 
     /**
