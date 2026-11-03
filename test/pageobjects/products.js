@@ -1,16 +1,13 @@
 import { $ } from '@wdio/globals'
-import Page from './base1.js';
+import Base1 from './base1.js';
 
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class Products extends Base {
+class Products extends Base1{
     /**
      * define selectors using getter methods
      */
-    get shoppingCart () {
-        return $('.shopping_cart_badge');
-    }
 
     get productTitle () {
         return $('.title');
