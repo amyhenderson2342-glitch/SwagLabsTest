@@ -21,8 +21,8 @@ class Login extends Base1 {
     }
 
     credentials = {
-        users: ["standard_user", "problem_user", "error_user", "visual_user"],
-        universalPass: "secret_sauce"
+       users: [ "problem_user", "error_user", "visual_user", "standard_user" ],
+       universalPass: "secret_sauce"
     }
 
     /**
